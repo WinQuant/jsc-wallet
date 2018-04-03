@@ -83,11 +83,12 @@ public class MainActivity extends AppCompatActivity
     private void setupViewPager(ViewPager viewPager) {
         JSCFragmentPagerAdapter adapter = new JSCFragmentPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragment(new HomeFragment());
-        adapter.addFragment(new MarketFragment());
-        adapter.addFragment(new TradeFragment());
-        adapter.addFragment(new AssetFragment());
-        adapter.addFragment(new AccountFragment());
+        // TODO recover the right layout.
+        adapter.addFragment(HomeFragment.getInstance(HomeFragment.class, null));
+        adapter.addFragment(HomeFragment.getInstance(HomeFragment.class, null));
+        adapter.addFragment(HomeFragment.getInstance(HomeFragment.class, null));
+        adapter.addFragment(HomeFragment.getInstance(HomeFragment.class, null));
+        adapter.addFragment(HomeFragment.getInstance(HomeFragment.class, null));
         viewPager.setAdapter(adapter);
     }
 
